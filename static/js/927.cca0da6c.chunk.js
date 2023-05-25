@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkkg=self.webpackChunkkg||[]).push([[927],{8927:function(t,c,n){n.r(c);n(2791);var e=n(3403),a=n(184);c.default=function(){for(var t=[],c=1;c<=5;c++)t.push({key:"".concat(c),label:"\u0423\u0440\u043e\u043a ".concat(c),children:"".concat(c)});return(0,a.jsx)(e.Z,{tabPosition:"top",items:t})}}}]);
-//# sourceMappingURL=927.cca0da6c.chunk.js.map
