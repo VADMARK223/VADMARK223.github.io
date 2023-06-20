@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <script>
     const previousPath = localStorage.getItem('previousPath');
+    console.log('previousPath', previousPath)
     if (previousPath) {
-      localStorage.removeItem('previousPath');
+      // localStorage.removeItem('previousPath');
+      console.log('previousPath', previousPath)
       window.location.href = previousPath;
     } else {
+      console.log('Root')
       window.location.href = '/';
     }
   </script>
