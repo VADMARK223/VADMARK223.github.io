@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;URL='/'">
+  <script>
+    const previousPath = localStorage.getItem('previousPath');
+    if (previousPath) {
+      localStorage.removeItem('previousPath');
+      window.location.href = previousPath;
+    } else {
+      window.location.href = '/';
+    }
+  </script>
 </head>
 <body>
   <!-- Этот блок содержимого будет проигнорирован, так как происходит перенаправление -->
