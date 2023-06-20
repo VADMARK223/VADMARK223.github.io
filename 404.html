@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        const previousPath = localStorage.getItem('previousPath');
+        console.log('previousPath', previousPath)
+        if (previousPath) {
+            localStorage.removeItem('previousPath');
+            console.log('previousPath', previousPath)
+            window.location.href = previousPath;
+        } else {
+            console.log('Root')
+            window.location.href = '/';
+        }
+    </script>
+</head>
+<body>
+<!-- Этот блок содержимого будет проигнорирован, так как происходит перенаправление -->
+<!-- Можно оставить его пустым или добавить сообщение об ошибке -->
+</body>
+</html>
